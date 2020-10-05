@@ -13,6 +13,26 @@ public class nota implements Parcelable {
         this.contenido = contenido;
     }
 
+    public nota() {
+    }
+
+    protected nota(Parcel in) {
+        titulo = in.readString();
+        contenido = in.readString();
+    }
+
+    public static final Creator<nota> CREATOR = new Creator<nota>() {
+        @Override
+        public nota createFromParcel(Parcel in) {
+            return new nota(in);
+        }
+
+        @Override
+        public nota[] newArray(int size) {
+            return new nota[size];
+        }
+    };
+
     public String getTitulo() {
         return titulo;
     }
@@ -36,6 +56,7 @@ public class nota implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-
+        dest.writeString(titulo);
+        dest.writeString(contenido);
     }
 }

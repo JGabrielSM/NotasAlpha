@@ -15,24 +15,36 @@
             android:id="@+id/etxtTituloCrearNota"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="3.5"
             android:ems="10"
             android:hint="Titulo"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/etxtNotaCrearNota"
+            android:id="@+id/etxtContenidoCrarNota"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Nota"
-            android:inputType="textPersonName" />
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
 
         <Button
             android:id="@+id/btnGuardarCrearNota"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="3.5"
             android:text="Guardar" />
     </LinearLayout>
