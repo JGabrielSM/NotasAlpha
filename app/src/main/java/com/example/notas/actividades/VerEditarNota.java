@@ -14,6 +14,7 @@ public class VerEditarNota extends AppCompatActivity {
 
     private EditText txtTitulo, txtContenido;
 
+
     private Button btnModificar;
 
     @Override
